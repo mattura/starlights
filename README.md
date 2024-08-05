@@ -23,8 +23,18 @@ See also [LightJar](https://github.com/mattura/lightjar) for a browser-controlle
 ## Use your LEDs!
 Press 'B' to advance the presets in the cycle, 'A' to go back. The LEDs change slowly so do wait a few seconds after you pressed the button for the change to manifest!
 
+If you are feeling adventurous, create your own preset colour schemes and add them to the list! See [LightJar](https://github.com/mattura/lightjar) for further information
+
 ## Help
-For more help using different LEDs and Thonny, check out [Pimoroni's Plasma 2040 help page](https://learn.pimoroni.com/article/plasma-2040#installing-our-custom-micropython-build)
+Are you using a different microcontroller? You may need to change the button-press code - does your microcontroller have 2 buttons?
+
+Are you using different LEDs? Check the NUM_LEDS is correct; and check the type (are they WS2812? APA?) and the RGB colour order in the 'led_strip =' line
+
+Are you using Micropython with the Plasma library from Pimoroni? Download it [here](https://github.com/pimoroni/pimoroni-pico/releases) (pico-v1..., no need for pico_USB)
+
+If you want to use CircuitPython - please try it! However, although I like CircuitPython a lot, I have had issues with the colour temperature of the LEDs here - these issues went away when I used the MicroPython method.
+
+For more help using different LEDs and Thonny, check out [Pimoroni's Plasma 2040 help page](https://learn.pimoroni.com/article/plasma-2040)
 
 ## Credits
 Thanks to Pimoroni of Sheffield-on-Sea for the hardware, support pages and micropython library including examples
